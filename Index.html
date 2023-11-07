@@ -24,9 +24,9 @@
             <option value="">Seleccionar nombre</option>
         </select>
 
-        <label for="tienda">Tienda:</label>
+        <label for="tienda">Tarea:</label>
         <select id="tienda">
-            <option value="">Seleccionar tienda</option>
+            <option value="">Seleccionar tarea</option>
         </select>
 
         <button class="btn" onclick="agregarPersona()">Agregar</button>
@@ -34,7 +34,7 @@
         <table id="tabla">
             <tr>
                 <th>Operador</th>
-                <th>Tienda Asignada</th>
+                <th>Tarea Asignada</th>
                 <th>Acciones</th>
             </tr>
         </table>
@@ -49,14 +49,41 @@
         // Datos de ejemplo desde el archivo JSON
         var datosJSON = {
             "nombres": [
-                "Alanis Casas",
-                "Alexandra Parada"
+                "Alvaro Olea",
+                "Bruno Valladares",
+                "Carlos Marileo",
+                "Carlos Rosales",
+                "Claudia Fontecilla",
+                "Daniela Gonzalez",
+                "Guillermo Nuñez",
+                "Guimarcis Algarin",
+                "Hector Diaz",
+                "Ignacio Aracena",
+                "Ligia Diaz",
+                "Lorena Calfuan",
+                "Nestor Pino",
+                "Viviana Rodriguez",
+                "Yessica Meriño"
 
-                // Agrega más nombres aquí
+                
             ],
             "tiendas": [
-                "Ahumada 165 - 366 - 25"
-                // Agrega más tiendas aquí
+                "Caminata Cyber",
+                "Caminata Puerta Tesoreria y Alto Valor",
+                "Caminata Vitrinas y puertas de escape",
+                "Caminata Pre inventario",
+                "Caminata Chaleco Anticortes",
+                "Caminata Jugueteria",
+                "Caminatas Preventivas",
+                "Caminata Sala de datos IDF - Sala de detenidos",
+                "Central de Incendio",
+                "Central de intrusion",
+                "Levantamiento de camaras con anomalias",
+                "Levantamiento de ticket y soporte - Self Checkout",
+                "Operador 1 de trabajos nocturnos",
+                "Operador 2 de trabajos nocturnos",
+                "Stand Alone"
+                
             ]
         };
 
