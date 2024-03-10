@@ -44,6 +44,15 @@
     </div>
 
     <script>
+
+        window.onblur = function () {
+            document.title = "Maldito insecto! 😤";
+        };
+
+        window.onfocus = function () {
+            document.title = "Digo... Central de monitoreo 🥰";
+        };
+
         // Verificar si hay datos almacenados en localStorage
         var personas = JSON.parse(localStorage.getItem("personas")) || [];
 
@@ -53,7 +62,6 @@
                 "Alvaro Olea",
                 "Bruno Valladares",
                 "Carlos Marileo",
-                "Carlos Rosales",
                 "Carola Serrano",
                 "Claudia Fontecilla",
                 "Daniela Gonzalez",
@@ -182,16 +190,6 @@
 
         // Cargar la tabla con los datos al cargar la página
         actualizarTabla();
-
-        // Función para cambiar el título de la página cuando el usuario cambia de pestaña
-        window.onblur = function () {
-            document.title = "Vuelve maldito insecto! 😤";
-        };
-
-        // Función para restaurar el título original cuando el usuario vuelve a la pestaña
-        window.onfocus = function () {
-            document.title = "No pasó nada aqui 🌚✨";
-        };
     </script>
 </body>
 <footer>
